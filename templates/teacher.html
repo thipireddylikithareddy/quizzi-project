@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block style %}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    margin: 0px;
+}
+
+.card {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:rgb(238, 206, 165);
+
+}
+
+.card .h4 {
+    font-weight: 700;
+}
+
+.color
+{
+  background-color: blue;
+}
+
+</style>
+{% endblock %}
+{% block content %}
+<form>
+  <div class="text-center">
+    <button type="submit" formaction="/addclass" class="btn btn-primary">&nbsp&nbsp &nbsp&nbsp Add Class &nbsp&nbsp &nbsp&nbsp</button>
+  </div>
+</form>
+<div style="margin-left:500px">
+  {% for a in classes %}
+    <br>
+    <form method="POST" action="/classs">
+    <div class="card pb-4">
+      <input type="submit" formaction="/classs" name="my_class" value="{{ a[0] }}">
+      <p class="h4 pt-4">
+        
+      </p>
+    </div>
+    </form>
+  {% endfor %}
+</div> 
+{% endblock %}

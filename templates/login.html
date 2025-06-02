@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<br><br>
+    <form class="container" name="login" method="POST" action="/login">
+        <legend style="margin-left: 400px;">LOGIN</legend>
+    <div class="col-md-8">
+        <label style="margin-left: 400px;" for="validationCustomUsername" class="form-label">Username</label>
+        <div class="input-group has-validation">
+        <input name="user" style="margin-left: 400px;" type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <label style="margin-left: 400px;" class="form-label">Password</label>
+        <div class="input-group has-validation">
+            <input name="password" style="margin-left: 400px;" type="password" class="form-control" aria-describedby="inputGroupPrepend" required>
+        </div>
+    </div>
+    <br>
+    <div class="col-12">
+        <button style="margin-left: 400px;" class="btn btn-primary" type="submit">Login</button>
+    </div>
+    </form>
+{% endblock %}

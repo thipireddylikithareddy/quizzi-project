@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quizzi</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      </head>
+    <body style="margin-left:10px;margin-right:10px">
+      <br>
+      <p style="font-family:cursive ;font-size: xx-large ;text-align: center;">Quiz Submitted</p>
+      <p style="font-family:cursive ;font-size: large;text-align: center;">Quiz Summary</p>
+      <br>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Sl. No.</th>
+            <th scope="col">Question</th>
+            <th scope="col">Selected Option</th>
+            <th scope="col">Correct Option</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if q1s==q1c %}
+          <tr class="table-success">
+            <th scope="row">1</th>
+            <td>{{q1}}</td>
+            <td>{{q1s}}</td>
+            <td>{{q1c}}</td>
+          </tr>
+          {% else %}
+          <tr class="table-danger">
+            <th scope="row">1</th>
+            <td>{{q1}}</td>
+            <td>{{q1s}}</td>
+            <td>{{q1c}}</td>
+          </tr>
+          {% endif %}
+
+          {% if q2s==q2c %}
+          <tr class="table-success">
+            <th scope="row">2</th>
+            <td>{{q2}}</td>
+            <td>{{q2s}}</td>
+            <td>{{q2c}}</td>
+          </tr>
+          {% else %}
+          <tr class="table-danger">
+            <th scope="row">2</th>
+            <td>{{q2}}</td>
+            <td>{{q2s}}</td>
+            <td>{{q2c}}</td>
+          </tr>
+          {% endif %}
+
+          {% if q3s==q3c %}
+          <tr class="table-success">
+            <th scope="row">3</th>
+            <td>{{q3}}</td>
+            <td>{{q3s}}</td>
+            <td>{{q3c}}</td>
+          </tr>
+          {% else %}
+          <tr class="table-danger">
+            <th scope="row">3</th>
+            <td>{{q3}}</td>
+            <td>{{q3s}}</td>
+            <td>{{q3c}}</td>
+          </tr>
+          {% endif %}
+
+          {% if q4s==q4c %}
+          <tr class="table-success">
+            <th scope="row">4</th>
+            <td>{{q4}}</td>
+            <td>{{q4s}}</td>
+            <td>{{q4c}}</td>
+          </tr>
+          {% else %}
+          <tr class="table-danger">
+            <th scope="row">4</th>
+            <td>{{q4}}</td>
+            <td>{{q4s}}</td>
+            <td>{{q4c}}</td>
+          </tr>
+          {% endif %}
+
+          {% if q5s==q5c %}
+          <tr class="table-success">
+            <th scope="row">5</th>
+            <td>{{q5}}</td>
+            <td>{{q5s}}</td>
+            <td>{{q5c}}</td>
+          </tr>
+          {% else %}
+          <tr class="table-danger">
+            <th scope="row">5</th>
+            <td>{{q5}}</td>
+            <td>{{q5s}}</td>
+            <td>{{q5c}}</td>
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+
+      <h4 style="text-align:center">YOUR SCORE: {{score}}</h4>
+    <form action="/">
+      <br><p style="text-align: center;"><button class="btn btn-primary" type="submit">Home</button></p>
+    </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+

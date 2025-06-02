@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+    {% block content %}
+        <form method="POSt">
+        <div style="margin-top: 100px;margin-left: 450px;" class="container">
+        <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Class Name:</label>
+            <input name="name" type="text" class="form-control" id="validationCustom05" required>
+        </div>
+       
+        <div class="container">
+            <button type="submit" formaction="/classjoin" class="btn btn-primary">join class</button>
+        </div>
+        </div>
+        </form>
+    {% endblock %}
+
+       
